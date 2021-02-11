@@ -1,1 +1,168 @@
 /* Add CSS styling here */
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    max-width:100%;
+  /*put a border around everything to see where it stops and starts*/
+    border:1px solid grey; 
+}
+/*General Styles*/
+html{
+    font-size:62.5%;
+}
+body{
+    font-size:1.8rem;
+    line-height: 1.5;
+    color: black;
+    font-family: 'PT Sans', sans-serif;
+    background-color:#FFFAFA;
+}
+h1, h2, h3, h4{
+    letter-spacing: 3px;
+    font-family: 'Nunito', sans-serif;
+    text-align: center;
+}
+h1{
+    font-size: 5rem;
+}
+h2{
+    font-size: 2.5rem;
+}
+h3{
+    font-size:2rem;
+}
+section{
+    padding: 4% 0;
+}
+a{
+    text-decoration:none;
+    letter-spacing:3px;
+    color:#4F4F4F;
+    font-family: 'PT Sans', sans-serif;
+}
+a:hover{
+    color:#1f2bd1;
+}
+i{
+    font-size: 5rem;
+}
+
+/*header section styles*/
+header nav{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    background-color: #4F4F4F;
+}
+.name{
+    width: 30%;
+}
+.name h1{
+    font-size: 2rem;
+    color: white;
+    text-align: left;
+    margin-left: 5%
+}
+.links{
+    width: 65%;
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.links a{
+    color: white;
+}
+/*Top Section Style*/
+#top{
+    height:50vh;
+    background-image: url("../assets/ments-surf.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-top:10%;
+    width:100%;
+}
+.titles{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 3%;
+}
+.titles h3{
+    font-size: 1.75rem;
+}
+
+.titles a{
+    display: flex;
+    justify-content: center;
+}
+.titles button {
+    color:white;
+    background-color: black;
+    font-size: 1.5rem;
+    padding:2%;
+    margin: 1%;
+    border-radius: 15%;
+}
+.middle{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.middle div{
+    width: 30%;
+    height: 25vh;
+    margin: 4% 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+
+}
+.img1 {
+    background-image: url("../assets/baja.jpeg");
+}
+.img2 {
+    background-image: url("../assets/fam.jpeg");
+}
+.img3 {
+    background-image: url("../assets/fish.jpeg");
+}
+.img4 {
+    background-image: url("../assets/kids.jpeg");
+}
+.img5 {
+    background-image: url("../assets/mentscrew.jpeg");
+}
+.img6 {
+    background-image: url("../assets/northshore.jpeg");
+}
+footer{
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+    justify-content: space-around;
+    margin-bottom: 10%;
+}
+.contact-button button{
+    color:white;
+    background-color: black;
+    font-size: 1.5rem;
+    padding:2%;
+    margin: 1%;
+    border-radius: 15%;
+}
+.insta a{
+    color:white;
+    background-color: black;
+    font-size: 1.5rem;
+    padding: 2%;
+    margin: 1%;
+    border-radius: 15%;
+
+}
