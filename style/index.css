@@ -5,7 +5,7 @@
     margin: 0;
     max-width:100%;
   /*put a border around everything to see where it stops and starts*/
-    border:1px solid grey; 
+   /border:1px solid grey; 
 }
 /*General Styles*/
 html{
@@ -15,25 +15,25 @@ body{
     font-size:1.8rem;
     line-height: 1.5;
     color: black;
-    font-family: 'PT Sans', sans-serif;
+    font-family: 'Open Sans Condensed', sans-serif;
     background-color:#FFFAFA;
 }
 h1, h2, h3, h4{
     letter-spacing: 3px;
-    font-family: 'Nunito', sans-serif;
+    font-family: 'Open Sans Condensed', sans-serif;
     text-align: center;
 }
 h1{
     font-size: 5rem;
 }
 h2{
-    font-size: 2.5rem;
+    font-size: 3.4rem;
 }
 h3{
     font-size:2rem;
 }
 section{
-    padding: 4% 0;
+    padding: 2% 0;
 }
 a{
     text-decoration:none;
@@ -57,6 +57,7 @@ header nav{
     display: flex;
     justify-content: space-between;
     background-color: #4F4F4F;
+    height: 5vh;
 }
 .name{
     width: 30%;
@@ -82,8 +83,8 @@ header nav{
     background-image: url("../assets/ments-surf.jpeg");
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
-    margin-top:10%;
+    background-position: bottom;
+    margin-top:5%;
     width:100%;
 }
 .titles{
@@ -91,7 +92,7 @@ header nav{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin-left: 3%;
+    margin-left: 1%;
 }
 .titles h3{
     font-size: 1.75rem;
@@ -102,28 +103,53 @@ header nav{
     justify-content: center;
 }
 .titles button {
-    color:white;
-    background-color: black;
-    font-size: 1.5rem;
-    padding:2%;
+    color:rgba(255, 255, 255, 0.411);
+    background-color: rgb(32, 32, 32);
+    font-size: 1.75rem;
+    padding: 2% 4%;
     margin: 1%;
     border-radius: 15%;
+}
+
+section.about-me{
+    border: black solid .5rem;
+    margin: 5%;
+    padding:1% 1%;
+    width: 90%;
+}
+.about-me p{
+    text-align: center;
 }
 .middle{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
 }
+
 .middle div{
     width: 30%;
     height: 25vh;
-    margin: 4% 0;
+    margin: 1% 0;
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: top;
     display: flex;
-
+    align-items: center;
+    justify-content: center;
 }
+.middle div .hide{
+    width: 70%;
+    height: 10vh;
+    display: none;
+}
+.middle div .hide h4{
+    font-size: 4rem;
+    color: #FFFAFA;
+}
+.middle div:hover .hide{
+    display: block;
+}
+
 .img1 {
     background-image: url("../assets/baja.jpeg");
 }
@@ -142,6 +168,9 @@ header nav{
 .img6 {
     background-image: url("../assets/northshore.jpeg");
 }
+
+/*footer section style*/
+
 footer{
     display: flex;
     flex-wrap: nowrap;
@@ -149,20 +178,8 @@ footer{
     justify-content: space-around;
     margin-bottom: 10%;
 }
-.contact-button button{
-    color:white;
+footer div{
     background-color: black;
-    font-size: 1.5rem;
-    padding:2%;
-    margin: 1%;
-    border-radius: 15%;
-}
-.insta a{
-    color:white;
-    background-color: black;
-    font-size: 1.5rem;
-    padding: 2%;
-    margin: 1%;
-    border-radius: 15%;
-
+    border-radius: 50% 50%;
+    padding: 1% 1%;
 }
